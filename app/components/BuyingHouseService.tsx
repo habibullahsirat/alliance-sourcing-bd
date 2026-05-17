@@ -1,2 +1,3 @@
 export default function BuyingHouseService() {
-    return <div>Buying House Service</div>;
+  return <div>Buying House Service</div>;
+}
