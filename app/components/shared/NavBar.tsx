@@ -37,12 +37,21 @@ export default function NavBar() {
         </NavLink>
       </div>
       <div>
-        <button className="rounded-[8px] border-blue-600 px-6 py-3 bg-gradient-to-r from-[#1F75FF] via-[#61DAFF] to-[#1F75FF] text-white shadow-lg shadow-blue-600/50 hover:bg-gradient-to-t from-blue-600 via-white to-blue-600 shadow-blue-600/80 transition duration-300">
+        <button
+          className="bg-[linear-gradient(280.65deg,_#1F75FF_0%,_#61DAFF_55%,_#1F75FF_90%)]
+         shadow-[0px_0px_20px_rgba(71,184,255,0.5),0px_5px_5px_-1px_rgba(58,125,233,0.25),inset_4px_4px_8px_rgba(175,230,255,0.5),inset_-4px_-4px_8px_rgba(19,95,216,0.35)]
+         hover:bg-[linear-gradient(54.78deg,_#1F75FF_-17.46%,_#61DAFF_56.75%,_#1F75FF_103.97%)]
+         hover:shadow-[0px_0px_20px_rgba(71,184,255,0.5),0px_5px_5px_-1px_rgba(58,125,233,0.25),inset_4px_4px_8px_rgba(175,230,255,0.5),inset_-4px_-4px_8px_rgba(19,95,216,0.35)]
+         rounded-[8px]
+         px-6 py-3
+         text-white font-semibold
+         transition-all duration-300
+         hover:scale-[1.03]
+         active:scale-[0.98]"
+        >
           Speck with us
         </button>
       </div>
     </div>
   );
 }
-
-// Font color: #0C0804
