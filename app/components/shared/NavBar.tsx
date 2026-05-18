@@ -19,7 +19,7 @@ export default function NavBar() {
           <img src="../../../public/logo2.png" alt="" />
         </div>
       </div>
-      <div className="flex justify-between gap-8 p-2">
+      <div className="flex justify-between gap-8 p-2 font-normal">
         <NavLink to="/" className="text-lg">
           Home
         </NavLink>
