@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between m-4">
+    <div className="flex justify-between m-4 ml-10">
       <div className="flex justify-start gap-2">
         <div className="w-10 overflow-hidden shrink-0">
           <img
@@ -15,7 +15,9 @@ export default function NavBar() {
           <p>ALLIANCE</p>
           <p>SOURCING BD</p>
         </div>
-        <h2>Logo 2</h2>
+        <div className="w-50 overflow-hidden shrink-0 mt-2">
+          <img src="../../../public/logo2.png" alt="" />
+        </div>
       </div>
       <div className="flex justify-between gap-8 p-2">
         <NavLink to="/" className="text-lg">
