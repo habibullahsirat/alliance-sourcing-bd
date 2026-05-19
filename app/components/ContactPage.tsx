@@ -1,7 +1,6 @@
 import type { Route } from "../+types/root";
 import ContatctComponent from "./contactpage/ContatctComponent";
 import Hero from "./contactpage/Hero";
-// import ContatctComponent from "./contactpage/ContatctComponent";
 
 export function meta({}: Route.MetaArgs) {
   return [
