@@ -2,23 +2,33 @@ export default function AllServices() {
   return (
     <div className="mt-20">
       <div className="text-center">
-        <p className="font-semibold">Why</p>
+        <p className="font-semibold text-[16px]">Why</p>
         <div>
-          <h2 className="font-[500] text-6xl mt-8">What sets us apart</h2>
-          <p className="font-[400] mt-8">We stand behind every garment</p>
+          <h2 className="font-[500] text-[60px] mt-8">What sets us apart</h2>
+          <p className="font-[400] mt-8 text-[20px]">
+            We stand behind every garment
+          </p>
         </div>
       </div>
       {/* cards */}
       <div className="m-[16px] px-[8px] py-[16px]">
         <div className="grid md:grid-cols-4 sm:grid-cols-1 gap-[32px]">
           {/* Card */}
-          <div className="flex flex-col h-[300px] bg-gray-100 rounded-[16px] px-[8px] py-[16px]">
+          <div className="flex flex-col h-[300px] justify-between bg-[#F2F2F2] rounded-[16px] px-[16px] py-[16px]">
             <div className="w-[40px] h-[32px]">
-              <img src="../../public/Vector1.png" alt="" />
+              <img
+                src="/Vector1.png"
+                alt="Quality assurance icon"
+                className="w-full h-full object-contain"
+              />
             </div>
-            <div className="my-auto">
-              <h5 className="text-3xl">Quality Assurance</h5>
-              <p className="text-lg">
+
+            <div className="mt-auto">
+              <h5 className="text-[32px] leading-[38px] font-medium text-black mb-[12px] max-w-[220px]">
+                Quality assurance
+              </h5>
+
+              <p className="text-[18px] leading-[28px] text-black max-w-[260px]">
                 Rigorous testing at every production stage
               </p>
             </div>
