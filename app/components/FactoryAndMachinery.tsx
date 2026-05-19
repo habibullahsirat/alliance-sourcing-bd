@@ -40,7 +40,6 @@ export default function FactoryAndMachinery() {
             </p>
           </div>
 
-          {/* GRID CARDS */}
           <div className="grid grid-cols-2 gap-6 mt-8">
             {features.map((item, index) => (
               <div key={index} className="flex gap-3">
@@ -51,7 +50,6 @@ export default function FactoryAndMachinery() {
                   className="w-10 h-10 object-contain"
                 />
 
-                {/* text */}
                 <div>
                   <h3 className="text-lg font-semibold">{item.title}</h3>
                   <p className="text-sm text-gray-600">{item.description}</p>
@@ -60,7 +58,6 @@ export default function FactoryAndMachinery() {
             ))}
           </div>
 
-          {/* BUTTON */}
           <div className="mt-6">
             <button className="border border-gray-200 px-6 py-3 font-[600] rounded-md hover:text-white hover:bg-blue-700 transition">
               Browse
