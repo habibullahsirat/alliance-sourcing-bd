@@ -2,43 +2,41 @@ export default function FactoryAndMachinery() {
   const features = [
     {
       image: "../../public/vector19.png",
-      title: "Knitwear",
-      description: "Sweaters, t-shirts, and knit garments made to order.",
+      title: "Garment production support",
+      description:
+        "Full-scale manufacturing with quality control at each stage.",
     },
     {
       image: "../../public/vector20.png",
-      title: "Woven fabrics",
-      description: "Cotton, blends, and specialty woven materials in stock.",
+      title: "Machinery supply and installation",
+      description: "We source and install equipment tailored to your needs.",
     },
     {
       image: "../../public/vector21.png",
-      title: "Denim and heavy fabrics",
-      description: "Durable denim and canvas for pants and jackets.",
+      title: "Maintenance and technical support",
+      description: "Our team keeps machines running smoothly year-round.",
     },
     {
       image: "../../public/vector22.png",
-      title: "Accessories and trims",
-      description:
-        "Buttons, zippers, labels, and finishing materials available.",
+      title: "Production optimization",
+      description: "We improve efficiency and reduce waste on every line.",
     },
   ];
   return (
     <div className="flex flex-col items-center mt-[64px] px-16 py-28 gap-20 w-[1440px] h-[864px] bg-[#FCEADA]">
-      {/* MAIN SECTION */}
       <div className="flex w-full h-full gap-16">
-        {/* RIGHT CONTENT SECTION */}
         <div className="w-1/2 flex flex-col justify-between">
-          {/* Top Text */}
           <div>
             <img src="../../public/vector18.png" alt="" />
 
             <h1 className="text-[60px] font-[500] mt-2">
-              Products and services
+              Factory and machinery capabilities
             </h1>
 
             <p className="mt-4">
-              We source and manage everything you need for apparel production.
-              From raw materials to finished goods, we handle it all.
+              We work with modern facilities equipped for precision production.
+              Our network includes mills and factories with the latest
+              technology.
             </p>
           </div>
 
@@ -70,7 +68,7 @@ export default function FactoryAndMachinery() {
           </div>
         </div>
 
-        <div className="w-1/2 h-full">
+        <div className="w-1/2 h-full px-[32px]">
           <img
             src="../../public/machinary.jpg"
             alt="Catalog"
