@@ -1,4 +1,4 @@
-export default function InventoryPage() {
+export default function InventoryComponent() {
   return (
     <section className="flex flex-col items-center gap-20 px-16 py-28 w-full bg-white">
       {/* Heading */}

@@ -2,7 +2,8 @@ import type { Route } from "../+types/root";
 import Hero from "./factorypage/Hero";
 import FactoryComponent from "./factorypage/Factory";
 import Machinery from "./factorypage/Machinery";
-import InventoryPage from "./factorypage/InventoryPage";
+import InventoryPage from "./factorypage/InventoryComponent";
+import InventoryComponent from "./factorypage/InventoryComponent";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -17,7 +18,7 @@ export default function Factory() {
       <Hero />
       <FactoryComponent />
       <Machinery />
-      <InventoryPage />
+      <InventoryComponent />
     </>
   );
 }
