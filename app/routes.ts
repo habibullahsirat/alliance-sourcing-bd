@@ -9,6 +9,6 @@ export default [
   layout("./layouts/MainLayout.tsx", [
     index("../app/routes/home.tsx"),
     route("about", "./components/AboutUs.tsx"),
-    // route("register", "../app/routes/register.tsx"),
+    route("factory", "./components/factory.tsx"),
   ]),
 ] satisfies RouteConfig;
