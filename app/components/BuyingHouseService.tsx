@@ -50,11 +50,11 @@ const services = [
 
 export default function BuyingHouseService() {
   return (
-    <div className="mx-[16px] px-[8px] py-[16px]">
+    <div className="mx-[32px] px-[16px] py-[32px] mt-[64px]">
       {/* Header */}
       <div className="text-center mb-10">
         <p>Services</p>
-        <h1 className="text-[60px]">Buying house services</h1>
+        <h1 className="text-[60px] font-[400]">Buying house services</h1>
         <p>We manage every step of your sourcing journey with precision.</p>
       </div>
 

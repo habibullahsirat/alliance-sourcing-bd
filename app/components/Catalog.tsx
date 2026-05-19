@@ -24,7 +24,7 @@ export default function Catalog() {
   ];
 
   return (
-    <div className="flex flex-col items-center px-16 py-28 gap-20 w-[1440px] h-[864px] bg-white">
+    <div className="flex flex-col items-center mt-[64px] px-16 py-28 gap-20 w-[1440px] h-[864px] bg-white">
       {/* MAIN SECTION */}
       <div className="flex w-full h-full gap-16">
         {/* LEFT IMAGE SECTION */}
@@ -32,7 +32,7 @@ export default function Catalog() {
           <img
             src="/catalog.jpg"
             alt="Catalog"
-            className="w-full h-full object-cover rounded-none"
+            className="w-full h-full object-cover rounded-md"
           />
         </div>
 
@@ -40,14 +40,15 @@ export default function Catalog() {
         <div className="w-1/2 flex flex-col justify-between">
           {/* Top Text */}
           <div>
-            <p className="text-sm text-gray-500">Our Catalog</p>
+            <p className="font-[500]">Catalog</p>
 
-            <h1 className="text-4xl font-bold mt-2">
-              Explore Our Product Range
+            <h1 className="text-[60px] font-[500] mt-2">
+              Products and services
             </h1>
 
-            <p className="text-gray-600 mt-4">
-              We provide high quality sourcing solutions tailored to your needs.
+            <p className="mt-4">
+              We source and manage everything you need for apparel production.
+              From raw materials to finished goods, we handle it all.
             </p>
           </div>
 
