@@ -23,6 +23,42 @@ export default function AllServices() {
               </p>
             </div>
           </div>
+
+          <div className="flex flex-col h-[300px] bg-gray-100 rounded-[16px] px-[8px] py-[16px]">
+            <div className="w-[40px] h-[32px]">
+              <img src="../../public/Vector2.png" alt="" />
+            </div>
+            <div className="my-auto">
+              <h5 className="text-3xl">Quality Assurance</h5>
+              <p className="text-lg">
+                Rigorous testing at every production stage
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col h-[300px] bg-gray-100 rounded-[16px] px-[8px] py-[16px]">
+            <div className="w-[40px] h-[32px]">
+              <img src="../../public/Vector3.png" alt="" />
+            </div>
+            <div className="my-auto">
+              <h5 className="text-3xl">Quality Assurance</h5>
+              <p className="text-lg">
+                Rigorous testing at every production stage
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col h-[300px] bg-gray-100 rounded-[16px] px-[8px] py-[16px]">
+            <div className="w-[40px] h-[32px]">
+              <img src="../../public/Vector4.png" alt="" />
+            </div>
+            <div className="my-auto">
+              <h5 className="text-3xl">Quality Assurance</h5>
+              <p className="text-lg">
+                Rigorous testing at every production stage
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
