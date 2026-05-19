@@ -25,19 +25,28 @@ export default function NavBar() {
           Home
         </NavLink>
 
-        <NavLink to="/" className="text-lg hover:text-blue-500 transition">
+        <NavLink to="/about" className="text-lg hover:text-blue-500 transition">
           About Us
         </NavLink>
 
-        <NavLink to="/" className="text-lg hover:text-blue-500 transition">
+        <NavLink
+          to="/app/components/AboutUs.tsx"
+          className="text-lg hover:text-blue-500 transition"
+        >
           Buying House
         </NavLink>
 
-        <NavLink to="/" className="text-lg hover:text-blue-500 transition">
+        <NavLink
+          to="/factory"
+          className="text-lg hover:text-blue-500 transition"
+        >
           Factory & Machinery
         </NavLink>
 
-        <NavLink to="/" className="text-lg hover:text-blue-500 transition">
+        <NavLink
+          to="/partners"
+          className="text-lg hover:text-blue-500 transition"
+        >
           Global Partners
         </NavLink>
       </div>
