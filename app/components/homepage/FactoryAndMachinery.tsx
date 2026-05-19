@@ -60,7 +60,7 @@ export default function FactoryAndMachinery() {
 
           <div className="mt-6">
             <button className="border border-gray-200 px-6 py-3 font-[600] rounded-md hover:text-white hover:bg-blue-700 transition">
-              Browse
+              Details
             </button>
           </div>
         </div>
