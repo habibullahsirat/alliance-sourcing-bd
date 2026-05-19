@@ -1,3 +1,98 @@
+// export default function BuyingHouseService() {
+//   return (
+//     <div>
+//       <div className="text-center">
+//         <p>Services</p>
+//         <h1 className="text-[60px]">Buying house services</h1>
+//         <p>We manage every step of your sourcing journey with precision.</p>
+//       </div>
+//       <div className="grid grid-cols-2 gap-[32px]">
+//         <div className="bg-[#0C97D5] text-white rounded-md w-[624px] h-[256px] px-[8px] py-[16px]">
+//           <div className="flex flex-col justify-between px-[8px] py-[16px] h-[217px]">
+//             <div className="w-[40px]">
+//               <img src="../../public/vector12.png" alt="" />
+//             </div>
+//             <div>
+//               <h2 className="text-[32px]">Product Development and sampling</h2>
+//               <p className="text-[18px]">
+//                 We create samples that match your vision exactly.
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+const services = [
+  // {
+  //   image: "/vector12.png",
+  //   title: "Product Development and Sampling",
+  //   description: "We create samples that match your vision exactly.",
+  // },
+  {
+    image: "/vector10.png",
+    title: "Supplier selection and evaluation",
+    description: "We find manufacturers who meet your standards.",
+  },
+  {
+    image: "/vector11.png",
+    title: "Price negotiation and order placement",
+    description: "We secure the best terms for your orders.",
+  },
+  {
+    image: "/vector13.png",
+    title: "Production follow-up and quality inspection",
+    description: "We monitor every batch from loom to shipment.",
+  },
+];
+
 export default function BuyingHouseService() {
-  return <div>Buying House Service</div>;
+  return (
+    <div className="mx-[16px] px-[8px] py-[16px]">
+      {/* Header */}
+      <div className="text-center mb-10">
+        <p>Services</p>
+        <h1 className="text-[60px]">Buying house services</h1>
+        <p>We manage every step of your sourcing journey with precision.</p>
+      </div>
+
+      {/* Cards */}
+      <div className="grid grid-cols-2 gap-[32px]">
+        <div className="bg-[#0C97D5] text-white rounded-md w-[624px] h-[256px] px-[8px] py-[16px]">
+          <div className="flex flex-col justify-between px-[8px] py-[16px] h-[217px]">
+            <div className="w-[40px]">
+              <img src="../../public/vector12.png" alt="" />
+            </div>
+            <div>
+              <h2 className="text-[32px]">Product Development and sampling</h2>
+              <p className="text-[18px]">
+                We create samples that match your vision exactly.
+              </p>
+            </div>
+          </div>
+        </div>
+        {services.map((item, index) => (
+          <div
+            key={index}
+            className="rounded-md border border-gray-200 w-[624px] h-[256px] px-[8px] py-[16px]"
+          >
+            <div className="flex flex-col justify-between px-[8px] py-[16px] h-[217px]">
+              {/* Icon */}
+              <div className="w-[40px]">
+                <img src={item.image} alt={item.title} />
+              </div>
+
+              {/* Text */}
+              <div>
+                <h2 className="text-[32px]">{item.title}</h2>
+                <p className="text-[18px]">{item.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }

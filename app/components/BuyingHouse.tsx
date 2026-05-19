@@ -2,7 +2,6 @@ export default function BuyingHouse() {
   return (
     <section className="w-full bg-[#FCEADA] px-16 py-28">
       <div className="mx-auto flex max-w-[1312px] items-center gap-20">
-        {/* Left Image */}
         <div className="w-1/2">
           <img
             src="/buying-house.png"
@@ -11,7 +10,6 @@ export default function BuyingHouse() {
           />
         </div>
 
-        {/* Right Content */}
         <div className="flex w-1/2 flex-col">
           <span className="mb-8 text-[16px] font-semibold text-black">
             Services
@@ -54,7 +52,6 @@ export default function BuyingHouse() {
             </div>
           </div>
 
-          {/* Button */}
           <button className="mt-12 w-fit rounded-[8px] border border-[#D4C5B8] bg-white px-8 py-4 text-[18px] font-medium text-black transition-all duration-300 hover:bg-black hover:text-white">
             Explore
           </button>
