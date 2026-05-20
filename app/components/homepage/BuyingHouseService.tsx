@@ -1,9 +1,4 @@
 const services = [
-  // {
-  //   image: "/vector12.png",
-  //   title: "Product Development and Sampling",
-  //   description: "We create samples that match your vision exactly.",
-  // },
   {
     image: "/vector10.png",
     title: "Supplier selection and evaluation",
@@ -24,19 +19,17 @@ const services = [
 export default function BuyingHouseService() {
   return (
     <div className="mx-[32px] px-[16px] py-[32px] mt-[64px]">
-      {/* Header */}
       <div className="text-center mb-10">
         <p>Services</p>
         <h1 className="text-[60px] font-[400]">Buying house services</h1>
         <p>We manage every step of your sourcing journey with precision.</p>
       </div>
 
-      {/* Cards */}
       <div className="grid grid-cols-2 gap-[32px]">
         <div className="bg-[#0C97D5] text-white rounded-md w-[624px] h-[256px] px-[8px] py-[16px]">
           <div className="flex flex-col justify-between px-[8px] py-[16px] h-[217px]">
             <div className="w-[40px]">
-              <img src="../../public/vector12.png" alt="" />
+              <img src="/vector12.png" alt="" />
             </div>
             <div>
               <h2 className="text-[32px]">Product Development and sampling</h2>
@@ -52,12 +45,10 @@ export default function BuyingHouseService() {
             className="rounded-md border border-gray-200 w-[624px] h-[256px] px-[8px] py-[16px]"
           >
             <div className="flex flex-col justify-between px-[8px] py-[16px] h-[217px]">
-              {/* Icon */}
               <div className="w-[40px]">
                 <img src={item.image} alt={item.title} />
               </div>
 
-              {/* Text */}
               <div>
                 <h2 className="text-[32px]">{item.title}</h2>
                 <p className="text-[18px]">{item.description}</p>

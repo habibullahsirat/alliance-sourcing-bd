@@ -25,10 +25,9 @@ export default function BuyingHouse() {
             connecting buyers with the right manufacturers.
           </p>
 
-          {/* Features */}
           <div className="mt-10 flex flex-col gap-6">
             <div className="flex items-center gap-4">
-              <img src="../../public/vector9.png" alt="" />
+              <img src="/vector9.png" alt="" />
 
               <p className="text-[18px] text-[#1F1F1F]">
                 Product development and sampling
@@ -36,7 +35,7 @@ export default function BuyingHouse() {
             </div>
 
             <div className="flex items-center gap-4">
-              <img src="../../public/vector10.png" alt="" />
+              <img src="/vector10.png" alt="" />
 
               <p className="text-[18px] text-[#1F1F1F]">
                 Supplier selection and evaluation
@@ -44,7 +43,7 @@ export default function BuyingHouse() {
             </div>
 
             <div className="flex items-center gap-4">
-              <img src="../../public/vector11.png" alt="" />
+              <img src="/vector11.png" alt="" />
 
               <p className="text-[18px] text-[#1F1F1F]">
                 Price negotiation and order placement
