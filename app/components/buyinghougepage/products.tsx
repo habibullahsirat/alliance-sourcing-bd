@@ -1,5 +1,3 @@
-const products = [];
-
 const wooven = [
   {
     image: "/1.png",
@@ -148,33 +146,36 @@ export default function ProductsComponent() {
       <div>
         <h1 className="text-center text-[60px] mt-[5%]">Wooven</h1>
         <div className="w-full px-6 py-8">
-          {/* Main Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {wooven.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col rounded-xl overflow-hidden"
-              >
-                {/* Top Text */}
-                {/* <p className="text-[#0b1736] text-[28px] font-semibold px-4 pt-4 pb-2">
+          <div>
+            <h2 className="text-[32px]">Five Pocket Twill</h2>
+            {/* Main Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {wooven.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col rounded-xl overflow-hidden"
+                >
+                  {/* Top Text */}
+                  {/* <p className="text-[#0b1736] text-[28px] font-semibold px-4 pt-4 pb-2">
               Five Pocket Twill
             </p> */}
-                {/* Image */}
-                <div className="w-full h-[320px] overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover"
-                  />
+                  {/* Image */}
+                  <div className="w-full h-[320px] overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  {/* Bottom Title */}
+                  <div className="bg-[#f2f2f2] py-4 px-3 text-center">
+                    <p className="text-[20px] font-medium text-[#1a2238] leading-snug">
+                      {item.title}
+                    </p>
+                  </div>
                 </div>
-                {/* Bottom Title */}
-                <div className="bg-[#f2f2f2] py-4 px-3 text-center">
-                  <p className="text-[20px] font-medium text-[#1a2238] leading-snug">
-                    {item.title}
-                  </p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
