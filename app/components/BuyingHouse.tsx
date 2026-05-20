@@ -1,6 +1,7 @@
 import type { Route } from "../+types/root";
 import Hero from "./contactpage/Hero";
 import BuyingHouseService from "./buyinghougepage/buyinghouseservices";
+import ProductsComponent from "./buyinghougepage/products";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -14,6 +15,7 @@ export default function BuyingHouse() {
     <>
       <Hero />
       <BuyingHouseService />
+      <ProductsComponent />
     </>
   );
 }

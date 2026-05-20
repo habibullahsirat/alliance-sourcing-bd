@@ -1,9 +1,4 @@
 const services = [
-  // {
-  //   image: "/vector12.png",
-  //   title: "Product Development and Sampling",
-  //   description: "We create samples that match your vision exactly.",
-  // },
   {
     image: "/vector10.png",
     title: "Supplier selection and evaluation",
