@@ -33,7 +33,7 @@ export default function Services() {
 
           <div className="flex items-start space-x-8 relative z-10">
             <div className="flex-shrink-0 w-11 h-11 bg-white flex items-center justify-center rounded-full border border-gray-100 shadow-sm">
-              <img src="/vector6.png" alt="" />
+              <img src="/vector6.1.png" alt="" />
             </div>
             <div className="flex-1 pt-1">
               <h3 className="text-2xl font-normal text-gray-900 mb-2 tracking-tight">
