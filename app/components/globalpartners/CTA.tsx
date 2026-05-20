@@ -1,7 +1,6 @@
 export default function CTA() {
   return (
     <>
-      {/* CTA SECTION */}
       <section
         className="flex justify-center items-center px-16 py-12 min-h-[335px] bg-cover bg-center relative"
         style={{
@@ -20,7 +19,6 @@ export default function CTA() {
               discuss your next collection.
             </p>
           </div>
-
           <button className="px-6 py-3 bg-[#0C97D5] border border-[#0C97D5] rounded-md text-white text-lg font-medium">
             Contact Sourcing
           </button>

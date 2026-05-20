@@ -1,7 +1,6 @@
 export default function Hero() {
   return (
     <>
-      {/* HERO SECTION */}
       <section
         className="relative flex flex-col justify-center items-center px-16 pt-36 pb-28 gap-12 w-full min-h-[594px] bg-cover bg-center overflow-hidden"
         style={{
@@ -24,7 +23,6 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Stats */}
         <div className="flex flex-wrap justify-center items-center gap-16">
           {[
             ["03+", "Regions"],

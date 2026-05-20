@@ -1,11 +1,4 @@
-import {
-  ArrowUpRight,
-  MessageCircle,
-  Shield,
-  Clock3,
-  Leaf,
-  Plus,
-} from "lucide-react";
+import { Plus } from "lucide-react";
 
 const faqs = [
   "What types of garments do you manufacture?",
@@ -21,7 +14,6 @@ const faqs = [
 export default function FAQS() {
   return (
     <>
-      {/* FAQ SECTION */}
       <section className="flex flex-col items-center px-16 py-20 bg-[#F2F2F2]">
         <div className="flex flex-col items-center gap-16 w-full">
           <div className="flex flex-col items-center gap-4 text-center">

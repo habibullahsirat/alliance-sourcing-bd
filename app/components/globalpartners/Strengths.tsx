@@ -1,35 +1,26 @@
-import {
-  ArrowUpRight,
-  MessageCircle,
-  Shield,
-  Clock3,
-  Leaf,
-  Plus,
-} from "lucide-react";
-
 const strengths = [
   {
-    icon: <ArrowUpRight className="w-5 h-5 text-white" />,
+    icon: <img src="/vector23.png" />,
     title: "Long-term collaboration approach",
     text: "Building lasting relationships that grow stronger with every collection",
   },
   {
-    icon: <MessageCircle className="w-5 h-5 text-white" />,
+    icon: <img src="/vector24.png" />,
     title: "Transparent communication",
     text: "Clear, honest dialogue at every stage of production",
   },
   {
-    icon: <Shield className="w-5 h-5 text-white" />,
+    icon: <img src="/vector27.png" />,
     title: "Strong quality control system",
     text: "Rigorous standards ensuring excellence in every garment",
   },
   {
-    icon: <Clock3 className="w-5 h-5 text-white" />,
+    icon: <img src="/vector25.png" />,
     title: "On-time delivery commitment",
     text: "Meeting deadlines consistently to keep your business running smoothly",
   },
   {
-    icon: <Leaf className="w-5 h-5 text-white" />,
+    icon: <img src="/vector26.png" />,
     title: "Ethical and sustainable sourcing",
     text: "Responsible practices that protect people and planet",
   },
@@ -38,7 +29,6 @@ const strengths = [
 export default function Strengths() {
   return (
     <>
-      {/* STRENGTH SECTION */}
       <section className="flex flex-col items-center px-16 py-20 gap-12 bg-white border-t border-gray-100">
         <div className="text-center max-w-4xl">
           <h2 className="text-5xl font-medium text-[#24201D] mb-6">
