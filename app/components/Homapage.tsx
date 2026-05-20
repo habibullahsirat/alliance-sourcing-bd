@@ -6,6 +6,14 @@ import BuyingHouseServices from "./homepage/BuyingHouseService";
 import Catalog from "./homepage/Catalog";
 import FactoryAndMachinery from "./homepage/FactoryAndMachinery";
 import ConnectWithUs from "./homepage/ConnectWithUs";
+import type { Route } from "../+types/root";
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Aliance Sourcing BD | Home" },
+    { name: "description", content: "Alliance Sourcing BD Home page" },
+  ];
+}
 
 export default function HomePage() {
   return (
