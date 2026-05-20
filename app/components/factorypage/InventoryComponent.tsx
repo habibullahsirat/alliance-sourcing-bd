@@ -1,14 +1,12 @@
 export default function InventoryComponent() {
   return (
     <section className="flex flex-col items-center gap-20 px-16 py-28 w-full bg-white">
-      {/* Heading */}
       <div className="text-center">
         <h1 className="text-6xl font-medium tracking-tight">
           Our Machinery Inventory
         </h1>
       </div>
 
-      {/* Table Section */}
       <div className="w-full max-w-7xl">
         <h2 className="text-4xl font-medium text-center mb-10">
           Cutting Machinery
@@ -47,7 +45,6 @@ export default function InventoryComponent() {
                 </tr>
               ))}
 
-              {/* Footer Row */}
               <tr className="border-t border-gray-300 font-semibold">
                 <td colSpan={2}></td>
                 <td className="px-6 py-8 text-right">

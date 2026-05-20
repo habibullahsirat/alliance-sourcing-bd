@@ -13,11 +13,7 @@ export default function FactoryComponent() {
         </p>
         <div className="flex justify-center gap-[24px]">
           <button>
-            <img
-              src="../../../public/download.png"
-              alt=""
-              className="w-[174px] h-[67px]"
-            />
+            <img src="/download.png" alt="" className="w-[174px] h-[67px]" />
           </button>
           <button className="w-[131px] h-[51px] rounded-[6px] px-[24px] py-[12px] bg-[#0C97D5] text-white">
             View PDF
