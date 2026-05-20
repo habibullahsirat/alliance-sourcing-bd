@@ -56,7 +56,6 @@ export default function Footer() {
                 <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3zm5 2.5A5.5 5.5 0 1 0 17.5 12 5.51 5.51 0 0 0 12 6.5zm0 2A3.5 3.5 0 1 1 8.5 12 3.5 3.5 0 0 1 12 8.5zm5.75-3.25a1.25 1.25 0 1 0 1.25 1.25 1.25 1.25 0 0 0-1.25-1.25z" />
               </svg>
             </a>
-            {/* X (formerly Twitter) */}
             <a href="#" className="text-white hover:text-gray-400 transition">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +66,6 @@ export default function Footer() {
                 <path d="M18.9 2H22l-6.8 7.78L23 22h-6.8l-5.3-6.9L4.9 22H2l7.3-8.34L1 2h6.9l4.8 6.3L18.9 2zm-1.2 18h1.9L6.2 3.9H4.2L17.7 20z" />
               </svg>
             </a>
-            {/* LinkedIn */}
             <a href="#" className="text-white hover:text-gray-400 transition">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
