@@ -4,7 +4,6 @@ export default function ContatctComponent() {
   return (
     <section className="flex flex-col items-center gap-20 px-16 py-28 w-full bg-white">
       <div className="w-full max-w-7xl">
-        {/* Top Content */}
         <div className="max-w-3xl">
           <p className="text-sm font-semibold text-black mb-6">Reach</p>
 
@@ -18,11 +17,8 @@ export default function ContatctComponent() {
           </p>
         </div>
 
-        {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-20 items-start">
-          {/* Left Side */}
           <div className="flex flex-col gap-14">
-            {/* Email */}
             <div>
               <Mail className="w-9 h-9 text-black mb-6" strokeWidth={1.8} />
 
@@ -38,7 +34,6 @@ export default function ContatctComponent() {
               </a>
             </div>
 
-            {/* Phone */}
             <div>
               <Phone className="w-9 h-9 text-black mb-6" strokeWidth={1.8} />
 
@@ -54,7 +49,6 @@ export default function ContatctComponent() {
               </a>
             </div>
 
-            {/* Office */}
             <div>
               <MapPin className="w-9 h-9 text-black mb-6" strokeWidth={1.8} />
 
@@ -69,11 +63,10 @@ export default function ContatctComponent() {
             </div>
           </div>
 
-          {/* Right Side Map */}
           <div className="w-full h-full">
             <div className="overflow-hidden rounded-xl border border-gray-200">
               <img
-                src="../../../public/map.png"
+                src="/map.png"
                 alt="Office location map"
                 className="w-full h-[520px] object-cover"
               />
