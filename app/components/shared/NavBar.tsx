@@ -30,7 +30,7 @@ export default function NavBar() {
         </NavLink>
 
         <NavLink
-          to="/app/components/AboutUs.tsx"
+          to="/buyinghouse"
           className="text-lg hover:text-blue-500 transition"
         >
           Buying House

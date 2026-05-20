@@ -147,7 +147,7 @@ export default function ProductsComponent() {
         <h1 className="text-center text-[60px] mt-[5%]">Wooven</h1>
         <div className="w-full px-6 py-8">
           <div>
-            <h2 className="text-[32px]">Five Pocket Twill</h2>
+            <h2 className="text-[26px] font-[500]">Five Pocket Twill</h2>
             {/* Main Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {wooven.map((item, index) => (
@@ -168,7 +168,7 @@ export default function ProductsComponent() {
                     />
                   </div>
                   {/* Bottom Title */}
-                  <div className="bg-[#f2f2f2] py-4 px-3 text-center">
+                  <div className="bg-[#F8FAFC] py-4 px-3 text-center">
                     <p className="text-[20px] font-medium text-[#1a2238] leading-snug">
                       {item.title}
                     </p>
