@@ -1,4 +1,4 @@
-const wooven = [
+const fivePocket = [
   {
     image: "/1.png",
     title: "Men’s Five Pocket TRS",
@@ -15,6 +15,9 @@ const wooven = [
     image: "/4.png",
     title: "Men’s Five Pocket TRS",
   },
+];
+
+const ladiesDresses = [
   {
     image: "/5.png",
     title: "Ladies Dresses",
@@ -31,6 +34,9 @@ const wooven = [
     image: "/8.png",
     title: "Ladies Dresses",
   },
+];
+
+const girlsDenim = [
   {
     image: "/9.png",
     title: "Girls Wide Leg Jegging",
@@ -47,6 +53,9 @@ const wooven = [
     image: "/12.jpg",
     title: "Streetwear Oversized Hoodie",
   },
+];
+
+const jeggings = [
   {
     image: "/13.jpg",
     title: "Stretch Fit Denim Jeggings",
@@ -65,7 +74,7 @@ const wooven = [
   },
 ];
 
-const knitwear = [
+const tShirt = [
   {
     image: "/k1.jpg",
     title: "Classic Cotton Crew T-Shirt",
@@ -82,6 +91,9 @@ const knitwear = [
     image: "/k4.jpg",
     title: "Urban Style Graphic T-Shirt",
   },
+];
+
+const polo = [
   {
     image: "/k5.jpg",
     title: "Classic Piqué Polo Shirt",
@@ -98,6 +110,9 @@ const knitwear = [
     image: "/k8.jpg",
     title: "Urban Style Graphic T-Shirt",
   },
+];
+
+const hoodie = [
   {
     image: "/h1.jpg",
     title: "Classic Pullover Hoodie",
@@ -114,23 +129,45 @@ const knitwear = [
     image: "/12.jpg",
     title: "Streetwear Oversized Hoodie",
   },
-  {
-    image: "/13.jpg",
-    title: "Stretch Fit Denim Jeggings",
-  },
-  {
-    image: "/14.jpg",
-    title: "High-Waist Slim Jeggings",
-  },
-  {
-    image: "/15.jpg",
-    title: "Comfort Flex Jeggings",
-  },
-  {
-    image: "/16.jpg",
-    title: "Streetwear Oversized Hoodie",
-  },
 ];
+
+const displayDresses = (name, dresses) => {
+  return (
+    <div className="w-full px-6 py-8">
+      <div>
+        <h2 className="text-[26px] font-[500]">{name}</h2>
+        {/* Main Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {dresses.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col rounded-xl overflow-hidden"
+            >
+              {/* Top Text */}
+              {/* <p className="text-[#0b1736] text-[28px] font-semibold px-4 pt-4 pb-2">
+              Five Pocket Twill
+            </p> */}
+              {/* Image */}
+              <div className="w-full h-[320px] overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Bottom Title */}
+              <div className="bg-[#F8FAFC] py-4 px-3 text-center">
+                <p className="text-[20px] font-medium text-[#1a2238] leading-snug">
+                  {item.title}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default function ProductsComponent() {
   return (
@@ -142,77 +179,116 @@ export default function ProductsComponent() {
           right technical expertise for every product type.
         </p>
       </div>
-
       <div>
         <h1 className="text-center text-[60px] mt-[5%]">Wooven</h1>
-        <div className="w-full px-6 py-8">
-          <div>
-            <h2 className="text-[26px] font-[500]">Five Pocket Twill</h2>
-            {/* Main Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {wooven.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col rounded-xl overflow-hidden"
-                >
-                  {/* Top Text */}
-                  {/* <p className="text-[#0b1736] text-[28px] font-semibold px-4 pt-4 pb-2">
-              Five Pocket Twill
-            </p> */}
-                  {/* Image */}
-                  <div className="w-full h-[320px] overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  {/* Bottom Title */}
-                  <div className="bg-[#F8FAFC] py-4 px-3 text-center">
-                    <p className="text-[20px] font-medium text-[#1a2238] leading-snug">
-                      {item.title}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
       </div>
-
-      <div>
-        <h1 className="text-center text-[60px] mt-[5%]">Knitwear</h1>
-        <div className="w-full px-6 py-8">
-          {/* Main Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {knitwear.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col rounded-xl overflow-hidden"
-              >
-                {/* Top Text */}
-                {/* <p className="text-[#0b1736] text-[28px] font-semibold px-4 pt-4 pb-2">
-              Five Pocket Twill
-            </p> */}
-                {/* Image */}
-                <div className="w-full h-[320px] overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {/* Bottom Title */}
-                <div className="bg-[#f2f2f2] py-4 px-3 text-center">
-                  <p className="text-[20px] font-medium text-[#1a2238] leading-snug">
-                    {item.title}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      {displayDresses("Five pocket twill", fivePocket)};
+      {displayDresses("Ladies Dress & Jackets", ladiesDresses)};
+      {displayDresses("Girls Denim", girlsDenim)};
+      {displayDresses("Jeggings", jeggings)};
     </div>
   );
 }
+
+// After wooven it will be copied
+// <div className="w-full px-6 py-8">
+//   <div>
+//     <h2 className="text-[26px] font-[500]">Five Pocket Twill</h2>
+//     {/* Main Grid */}
+//     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+//       {fivePocket.map((item, index) => (
+//         <div
+//           key={index}
+//           className="flex flex-col rounded-xl overflow-hidden"
+//         >
+//           {/* Top Text */}
+//           {/* <p className="text-[#0b1736] text-[28px] font-semibold px-4 pt-4 pb-2">
+//       Five Pocket Twill
+//     </p> */}
+//           {/* Image */}
+//           <div className="w-full h-[320px] overflow-hidden">
+//             <img
+//               src={item.image}
+//               alt={item.title}
+//               className="w-full h-full object-cover"
+//             />
+//           </div>
+//           {/* Bottom Title */}
+//           <div className="bg-[#F8FAFC] py-4 px-3 text-center">
+//             <p className="text-[20px] font-medium text-[#1a2238] leading-snug">
+//               {item.title}
+//             </p>
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   </div>
+// </div>
+/////////////////////////////////////////////////////
+
+//   <div>
+//     <h1 className="text-center text-[60px] mt-[5%]">Knitwear</h1>
+//     <div className="w-full px-6 py-8">
+//       {/* Main Grid */}
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+//         {ladiesDresses.map((item, index) => (
+//           <div
+//             key={index}
+//             className="flex flex-col rounded-xl overflow-hidden"
+//           >
+//             {/* Top Text */}
+//             {/* <p className="text-[#0b1736] text-[28px] font-semibold px-4 pt-4 pb-2">
+//           Five Pocket Twill
+//         </p> */}
+//             {/* Image */}
+//             <div className="w-full h-[320px] overflow-hidden">
+//               <img
+//                 src={item.image}
+//                 alt={item.title}
+//                 className="w-full h-full object-cover"
+//               />
+//             </div>
+//             {/* Bottom Title */}
+//             <div className="bg-[#f2f2f2] py-4 px-3 text-center">
+//               <p className="text-[20px] font-medium text-[#1a2238] leading-snug">
+//                 {item.title}
+//               </p>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   </div>
+
+//    Ladies Dresses
+//       <div>
+//     <h2 className="text-[26px] font-[500]">Ladies Dresses</h2>
+//     {/* Main Grid */}
+//     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+//       {ladiesDresses.map((item, index) => (
+//         <div
+//           key={index}
+//           className="flex flex-col rounded-xl overflow-hidden"
+//         >
+//           {/* Top Text */}
+//           {/* <p className="text-[#0b1736] text-[28px] font-semibold px-4 pt-4 pb-2">
+//       Five Pocket Twill
+//     </p> */}
+//           {/* Image */}
+//           <div className="w-full h-[320px] overflow-hidden">
+//             <img
+//               src={item.image}
+//               alt={item.title}
+//               className="w-full h-full object-cover"
+//             />
+//           </div>
+//           {/* Bottom Title */}
+//           <div className="bg-[#F8FAFC] py-4 px-3 text-center">
+//             <p className="text-[20px] font-medium text-[#1a2238] leading-snug">
+//               {item.title}
+//             </p>
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   </div>
