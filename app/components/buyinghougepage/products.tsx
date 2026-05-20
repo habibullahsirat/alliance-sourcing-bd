@@ -1,3 +1,5 @@
+import WorkProcess from "../homepage/WorkProcess";
+
 const fivePocket = [
   {
     image: "/1.png",
@@ -136,18 +138,12 @@ const displayDresses = (name, dresses) => {
     <div className="w-full px-6 py-8">
       <div>
         <h2 className="text-[26px] font-[500]">{name}</h2>
-        {/* Main Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {dresses.map((item, index) => (
             <div
               key={index}
               className="flex flex-col rounded-xl overflow-hidden"
             >
-              {/* Top Text */}
-              {/* <p className="text-[#0b1736] text-[28px] font-semibold px-4 pt-4 pb-2">
-              Five Pocket Twill
-            </p> */}
-              {/* Image */}
               <div className="w-full h-[320px] overflow-hidden">
                 <img
                   src={item.image}
@@ -155,7 +151,6 @@ const displayDresses = (name, dresses) => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              {/* Bottom Title */}
               <div className="bg-[#F8FAFC] py-4 px-3 text-center">
                 <p className="text-[20px] font-medium text-[#1a2238] leading-snug">
                   {item.title}
@@ -186,6 +181,12 @@ export default function ProductsComponent() {
       {displayDresses("Ladies Dress & Jackets", ladiesDresses)};
       {displayDresses("Girls Denim", girlsDenim)};
       {displayDresses("Jeggings", jeggings)};
+      <div>
+        <h1 className="text-center text-[60px] mt-[5%]">Knitwear</h1>
+      </div>
+      {displayDresses("T-Shirt", tShirt)};{displayDresses("Polo", polo)};
+      {displayDresses("Hoodie", hoodie)};{displayDresses("Jeggings", jeggings)};
+      <WorkProcess />
     </div>
   );
 }
