@@ -5,7 +5,7 @@ export default function Hero() {
         className="relative flex flex-col justify-center items-center px-16 pt-36 pb-28 gap-12 w-full min-h-[594px] bg-cover bg-center overflow-hidden"
         style={{
           backgroundImage:
-            "linear-gradient(180deg, rgba(10,102,194,0.8) 0%, rgba(0,0,0,0.8) 100%), url('../../../public/partners.jpg')",
+            "linear-gradient(180deg, rgba(10,102,194,0.8) 0%, rgba(0,0,0,0.8) 100%), url('/partners.jpg')",
         }}
       >
         <div className="flex flex-col items-center gap-2 text-center z-10">

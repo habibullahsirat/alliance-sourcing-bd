@@ -5,7 +5,7 @@ export default function CTA() {
         className="flex justify-center items-center px-16 py-12 min-h-[335px] bg-cover bg-center relative"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../../public/buying-house.png')",
+            "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/buying-house.png')",
         }}
       >
         <div className="flex flex-col items-center text-center gap-8 max-w-3xl">
