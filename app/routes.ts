@@ -12,5 +12,6 @@ export default [
     route("factory", "./components/factory.tsx"),
     route("contactus", "./components/ContactPage.tsx"),
     route("partners", "./components/GlobalPartners.tsx"),
+    route("buyinghouse", "./components/BuyingHouse.tsx"),
   ]),
 ] satisfies RouteConfig;
