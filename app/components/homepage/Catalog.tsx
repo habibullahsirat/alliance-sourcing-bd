@@ -1,22 +1,22 @@
 export default function Catalog() {
   const features = [
     {
-      image: "../../public/vector14.png",
+      image: "/vector14.png",
       title: "Knitwear",
       description: "Sweaters, t-shirts, and knit garments made to order.",
     },
     {
-      image: "../../public/vector15.png",
+      image: "/vector15.png",
       title: "Woven fabrics",
       description: "Cotton, blends, and specialty woven materials in stock.",
     },
     {
-      image: "../../public/vector16.png",
+      image: "/vector16.png",
       title: "Denim and heavy fabrics",
       description: "Durable denim and canvas for pants and jackets.",
     },
     {
-      image: "../../public/vector17.png",
+      image: "/vector17.png",
       title: "Accessories and trims",
       description:
         "Buttons, zippers, labels, and finishing materials available.",
@@ -25,9 +25,7 @@ export default function Catalog() {
 
   return (
     <div className="flex flex-col items-center mt-[64px] px-16 py-28 gap-20 w-[1440px] h-[864px] bg-white">
-      {/* MAIN SECTION */}
       <div className="flex w-full h-full gap-16">
-        {/* LEFT IMAGE SECTION */}
         <div className="w-1/2 h-full">
           <img
             src="/catalog.jpg"
@@ -36,9 +34,7 @@ export default function Catalog() {
           />
         </div>
 
-        {/* RIGHT CONTENT SECTION */}
         <div className="w-1/2 flex flex-col justify-between">
-          {/* Top Text */}
           <div>
             <p className="font-[500]">Catalog</p>
 
@@ -52,18 +48,15 @@ export default function Catalog() {
             </p>
           </div>
 
-          {/* GRID CARDS */}
           <div className="grid grid-cols-2 gap-6 mt-8">
             {features.map((item, index) => (
               <div key={index} className="flex gap-3">
-                {/* icon */}
                 <img
                   src={item.image}
                   alt={item.title}
                   className="w-10 h-10 object-contain"
                 />
 
-                {/* text */}
                 <div>
                   <h3 className="text-lg font-semibold">{item.title}</h3>
                   <p className="text-sm text-gray-600">{item.description}</p>
@@ -72,7 +65,6 @@ export default function Catalog() {
             ))}
           </div>
 
-          {/* BUTTON */}
           <div className="mt-6">
             <button className="border border-gray-200 px-6 py-3 font-[600] rounded-md hover:text-white hover:bg-blue-700 transition">
               Browse

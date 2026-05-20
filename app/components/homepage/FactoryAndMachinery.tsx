@@ -1,23 +1,23 @@
 export default function FactoryAndMachinery() {
   const features = [
     {
-      image: "../../public/vector19.png",
+      image: "/vector19.png",
       title: "Garment production support",
       description:
         "Full-scale manufacturing with quality control at each stage.",
     },
     {
-      image: "../../public/vector20.png",
+      image: "/vector20.png",
       title: "Machinery supply and installation",
       description: "We source and install equipment tailored to your needs.",
     },
     {
-      image: "../../public/vector21.png",
+      image: "/vector21.png",
       title: "Maintenance and technical support",
       description: "Our team keeps machines running smoothly year-round.",
     },
     {
-      image: "../../public/vector22.png",
+      image: "/vector22.png",
       title: "Production optimization",
       description: "We improve efficiency and reduce waste on every line.",
     },
@@ -27,7 +27,7 @@ export default function FactoryAndMachinery() {
       <div className="flex w-full h-full gap-16">
         <div className="w-1/2 flex flex-col justify-between">
           <div>
-            <img src="../../public/vector18.png" alt="" />
+            <img src="/vector18.png" alt="" />
 
             <h1 className="text-[60px] font-[500] mt-2">
               Factory and machinery capabilities
@@ -43,7 +43,6 @@ export default function FactoryAndMachinery() {
           <div className="grid grid-cols-2 gap-6 mt-8">
             {features.map((item, index) => (
               <div key={index} className="flex gap-3">
-                {/* icon */}
                 <img
                   src={item.image}
                   alt={item.title}
@@ -67,7 +66,7 @@ export default function FactoryAndMachinery() {
 
         <div className="w-1/2 h-full px-[32px]">
           <img
-            src="../../public/machinary.jpg"
+            src="/machinary.jpg"
             alt="Catalog"
             className="w-full h-full object-cover rounded-md"
           />

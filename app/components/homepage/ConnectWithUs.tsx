@@ -4,7 +4,7 @@ export default function ConnectWithUs() {
       <div className="relative bg-black">
         <div className="w-full h-160 overflow-hidden shrink-0 opacity-60">
           <img
-            src="../../public/hero.png"
+            src="/hero.png"
             alt="Cloth"
             className="w-full h-full object-cover"
           />
