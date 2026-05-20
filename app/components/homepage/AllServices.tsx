@@ -40,7 +40,6 @@ export default function AllServices() {
         </div>
       </div>
 
-      {/* Cards */}
       <div className="m-[16px] px-[8px] py-[16px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[32px]">
           {services.map((service) => (
