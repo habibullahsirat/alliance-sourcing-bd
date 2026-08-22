@@ -1,27 +1,31 @@
 export default function Hero() {
   return (
-    <div>
-      <div className="relative bg-black">
-        <div className="w-full h-73 overflow-hidden shrink-0 opacity-60">
-          <img
-            src="/hero.png"
-            alt="Cloth"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="flex flex-col justify-center absolute inset-0 text-center">
-          <div className="mx-[25%]">
-            <h2 className="text-[58px] text-white font-[syne]">
-              About Alliance Sourcing BD
-            </h2>
-            <p className="text-white font-[inter]  mt-5">
-              Your premier partner in seamless garment sourcing and global
-              manufacturing excellence, bridging the gap between design
-              andproduction.
-            </p>
-          </div>
+    <section className="relative bg-black w-full overflow-hidden">
+      {/* Background Image Container */}
+      <div className="w-full h-[300px] sm:h-[360px] md:h-[420px] lg:h-[480px] overflow-hidden opacity-60">
+        <img
+          src="/hero.png"
+          alt="About Alliance Sourcing BD"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+
+      {/* Overlay Content */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-12 py-6">
+        <div className="max-w-4xl mx-auto flex flex-col items-center">
+          {/* Page Title */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[58px] text-white font-[syne] font-bold leading-tight tracking-tight">
+            About Alliance Sourcing BD
+          </h1>
+
+          {/* Page Subtitle */}
+          <p className="text-gray-200 font-[inter] text-sm sm:text-base md:text-lg lg:text-xl mt-3 sm:mt-5 max-w-2xl leading-relaxed">
+            Your premier partner in seamless garment sourcing and global
+            manufacturing excellence, bridging the gap between design and
+            production.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
