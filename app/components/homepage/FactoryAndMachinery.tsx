@@ -22,56 +22,77 @@ export default function FactoryAndMachinery() {
       description: "We improve efficiency and reduce waste on every line.",
     },
   ];
-  return (
-    <div className="flex flex-col items-center mt-[64px] px-16 py-28 gap-20 w-[1440px] h-[864px] bg-[#FCEADA]">
-      <div className="flex w-full h-full gap-16">
-        <div className="w-1/2 flex flex-col justify-between">
-          <div>
-            <img src="/vector18.png" alt="" />
 
-            <h1 className="text-[60px] font-[500] mt-2">
+  return (
+    <section className="bg-[#FCEADA] py-12 sm:py-16 md:py-20 lg:py-28 px-4 sm:px-8 md:px-12 lg:px-16 w-full my-8 sm:my-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-center">
+        {/* Content Container */}
+        <div className="lg:col-span-6 flex flex-col justify-between">
+          {/* Header Info */}
+          <div>
+            <div className="w-10 h-10 mb-2">
+              <img
+                src="/vector18.png"
+                alt="Capability Icon"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[60px] font-medium leading-[1.15] text-gray-900 mt-2">
               Factory and machinery capabilities
             </h1>
 
-            <p className="mt-4">
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-gray-700 leading-relaxed max-w-2xl">
               We work with modern facilities equipped for precision production.
               Our network includes mills and factories with the latest
               technology.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 mt-8">
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mt-6 sm:mt-8 lg:mt-10">
             {features.map((item, index) => (
-              <div key={index} className="flex gap-3">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-10 h-10 object-contain"
-                />
+              <div key={index} className="flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 shrink-0 flex items-center justify-center">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
-                  <p className="text-sm text-gray-600">{item.description}</p>
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-900 leading-snug">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-600 mt-1 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-6">
-            <button className="border border-gray-200 px-6 py-3 font-[600] rounded-md hover:text-white hover:bg-blue-700 transition">
+          {/* CTA Button */}
+          <div className="mt-8 sm:mt-10">
+            <button
+              type="button"
+              className="w-full sm:w-auto border border-gray-300 bg-white px-6 sm:px-8 py-3 rounded-lg font-semibold text-gray-900 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 active:scale-[0.98] shadow-sm text-sm sm:text-base"
+            >
               Details
             </button>
           </div>
         </div>
 
-        <div className="w-1/2 h-full px-[32px]">
+        {/* Image Container */}
+        <div className="lg:col-span-6 w-full">
           <img
             src="/machinary.jpg"
-            alt="Catalog"
-            className="w-full h-full object-cover rounded-md"
+            alt="Factory Machinery"
+            className="w-full h-[320px] sm:h-[450px] md:h-[550px] lg:h-[600px] object-cover rounded-xl shadow-sm"
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
