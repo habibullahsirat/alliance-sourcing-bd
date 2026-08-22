@@ -27,39 +27,46 @@ const services = [
 
 export default function AllServices() {
   return (
-    <div className="mt-20">
-      <div className="text-center">
-        <p className="font-semibold text-[16px]">Why</p>
+    <section className="mt-12 sm:mt-16 md:mt-20 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto">
+      {/* Header Section */}
+      <div className="text-center max-w-3xl mx-auto">
+        <p className="font-semibold text-sm sm:text-base text-blue-600 uppercase tracking-wider">
+          Why
+        </p>
 
-        <div>
-          <h2 className="font-[500] text-[60px] mt-8">What sets us apart</h2>
+        <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2 sm:mt-4 text-gray-900 tracking-tight">
+          What sets us apart
+        </h2>
 
-          <p className="font-[400] mt-8 text-[20px]">
-            We stand behind every garment
-          </p>
-        </div>
+        <p className="font-normal mt-3 sm:mt-4 text-base sm:text-lg md:text-xl text-gray-600">
+          We stand behind every garment
+        </p>
       </div>
 
-      <div className="m-[16px] px-[8px] py-[16px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[32px]">
+      {/* Grid Cards Container */}
+      <div className="mt-8 sm:mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {services.map((service) => (
             <div
               key={service.id}
-              className="flex flex-col h-[300px] bg-[#F2F2F2] rounded-[16px] px-[16px] py-[16px]"
+              className="flex flex-col justify-between min-h-[260px] sm:min-h-[280px] bg-[#F2F2F2] hover:bg-[#e8e8e8] transition-colors duration-300 rounded-2xl p-6 sm:p-8"
             >
-              <div className="w-[40px] h-[32px]">
+              {/* Icon Container */}
+              <div className="w-10 h-10 sm:w-12 sm:h-12 shrink-0 flex items-center justify-start">
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="mt-auto">
-                <h5 className="text-[32px] leading-[38px] font-medium text-black mb-[12px] max-w-[220px]">
-                  {service.title}
-                </h5>
 
-                <p className="text-[18px] leading-[28px] text-black max-w-[260px]">
+              {/* Text Container */}
+              <div className="mt-8 sm:mt-12">
+                <h3 className="text-xl sm:text-2xl lg:text-2xl font-medium text-black mb-2 leading-tight">
+                  {service.title}
+                </h3>
+
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                   {service.description}
                 </p>
               </div>
@@ -67,6 +74,6 @@ export default function AllServices() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
